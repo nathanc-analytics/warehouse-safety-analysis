@@ -187,28 +187,28 @@ warehouse-safety-analysis/
 README.md
 
 charts/
-├── dock_safety.png
-├── lifting_lowering.png
-├── management_support.png
-└── README.md
+dock_safety.png
+lifting_lowering.png
+management_support.png
+README.md
 
 data/
-├── Ban 701 Assignment Project Data.xlsx
-├── LiftingLoweringMean.xlsx
-├── docksafety.xlsx
-├── mgmtsupport.xlsx
-└── README.md
+Ban 701 Assignment Project Data.xlsx
+LiftingLoweringMean.xlsx
+docksafety.xlsx
+mgmtsupport.xlsx
+README.md
 
 docs/
-├── Ban 701 Project Questionnaire.docx
-├── Warehouse Safety Project.docx
-└── README.md
+Ban 701 Project Questionnaire.docx
+Warehouse Safety Project.docx
+README.md
 
 scripts/
-├── H1.R
-├── H2.R
-├── H3.R
-└── README.md
+H1.R
+H2.R
+H3.R
+README.md
 
 ## Folder Descriptions
 
