@@ -182,17 +182,47 @@ The relationship between dock safety conditions and injury risk was positive but
 
 # Repository Contents
 
-```text
-README.md
-H1.R
-H2.R
-H3.R
-BAN 701 Project Part 2.docx
-BAN 701 Project Part 3.docx
-charts/
-```
+warehouse-safety-analysis/
 
----
+README.md
+
+charts/
+├── dock_safety.png
+├── lifting_lowering.png
+├── management_support.png
+└── README.md
+
+data/
+├── Ban 701 Assignment Project Data.xlsx
+├── LiftingLoweringMean.xlsx
+├── docksafety.xlsx
+├── mgmtsupport.xlsx
+└── README.md
+
+docs/
+├── Ban 701 Project Questionnaire.docx
+├── Warehouse Safety Project.docx
+└── README.md
+
+scripts/
+├── H1.R
+├── H2.R
+├── H3.R
+└── README.md
+
+## Folder Descriptions
+
+### charts/
+Contains regression visualizations and trendline analysis used to illustrate relationships between workplace safety factors and injury risk.
+
+### data/
+Contains the survey dataset and supporting Excel workbooks used for statistical analysis and hypothesis testing.
+
+### docs/
+Contains the survey questionnaire and final project report documenting the research methodology, analysis, findings, and conclusions.
+
+### scripts/
+Contains R scripts used to perform hypothesis testing, regression analysis, statistical calculations, and data visualization.
 
 # Future Improvements
 
