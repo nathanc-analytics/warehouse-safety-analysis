@@ -1,28 +1,29 @@
-# Warehouse Workplace Safety Analysis Using Regression Modeling
+# Warehouse Workplace Safety Analysis: Survey Design, Data Collection, and Regression Modeling
 
 ## Project Overview
 
-This project analyzes workplace safety factors associated with injuries in warehouse environments using statistical modeling and regression analysis in R.
+This project investigates workplace safety factors associated with injury risk in warehouse environments using survey research, statistical analysis, and regression modeling in R.
 
-The study was conducted as part of BAN 701: Business Analysis Methods at the University of Nevada, Reno. The objective was to identify workplace factors that contribute to injury risk among warehouse employees and package handlers.
+The study was completed as part of BAN 701: Business Analysis Methods at the University of Nevada, Reno. The objective was to identify workplace conditions that contribute to employee injury risk and determine which safety factors have the strongest relationship with workplace injuries.
 
-Using survey data collected from warehouse workers, multiple regression and simple linear regression analyses were performed to evaluate the relationship between workplace safety practices and injury risk.
+The project follows the complete analytics lifecycle, including research design, survey development, data collection, statistical analysis, visualization, and business recommendations.
 
 ---
 
 # Research Question
 
-What workplace safety factors are most strongly associated with warehouse injury risk?
+What workplace safety factors are most strongly associated with injury risk among warehouse employees?
 
 ---
 
-# Objectives
+# Project Objectives
 
-* Identify workplace safety factors that contribute to injuries
-* Evaluate the relationship between safety practices and injury risk
-* Apply regression analysis techniques using R
-* Interpret statistical findings for business decision-making
-* Visualize relationships using trendline analysis
+* Identify workplace safety factors that contribute to employee injuries.
+* Evaluate relationships between safety practices and injury risk.
+* Apply statistical analysis techniques using R.
+* Conduct hypothesis testing using regression analysis.
+* Visualize relationships between workplace safety factors and injury outcomes.
+* Provide insights that may help organizations improve workplace safety.
 
 ---
 
@@ -36,7 +37,7 @@ The study examined five major workplace safety categories:
 * Operational Equipment
 * Hazardous Materials
 
-Each category was measured using multiple survey questions rated on a 1–5 scale.
+Each category was measured using multiple survey questions rated on a 1–5 Likert scale.
 
 ---
 
@@ -44,9 +45,7 @@ Each category was measured using multiple survey questions rated on a 1–5 scal
 
 ## Data Collection
 
-Survey responses were collected from warehouse associates and package handlers.
-
-Participants rated workplace safety conditions using a Likert scale ranging from 1 (low risk) to 5 (high risk).
+Survey responses were collected from warehouse associates and package handlers. Participants rated workplace conditions based on their perceived likelihood of contributing to workplace injuries.
 
 ## Statistical Methods
 
@@ -57,21 +56,22 @@ The following analytical techniques were used:
 * Hypothesis Testing
 * F-Tests
 * Two-Tailed T-Tests
-* Trendline Visualization
+* Trendline Analysis
+* Data Visualization
 
 ---
 
 # Hypotheses
 
-### H1
+## H1
 
-A low level of management support for implementing proper practices is positively associated with workplace injuries.
+A low level of management support for implementing proper safety practices is positively associated with workplace injuries.
 
-### H2
+## H2
 
 A low level of lifting and lowering practices is positively associated with workplace injuries.
 
-### H3
+## H3
 
 A low level of dock safety practices is positively associated with workplace injuries.
 
@@ -81,16 +81,16 @@ A low level of dock safety practices is positively associated with workplace inj
 
 ## Management Support
 
-Management support showed the strongest relationship with injury risk.
+Management support demonstrated the strongest relationship with injury risk.
 
-Key findings:
+### Results
 
 * Significant positive relationship with injury risk
 * Adjusted R² = 0.3369
 * Positive regression coefficient
 * Hypothesis accepted
 
-Interpretation:
+### Interpretation
 
 As management support decreases, workplace injury risk increases.
 
@@ -100,30 +100,30 @@ As management support decreases, workplace injury risk increases.
 
 Lifting and lowering practices demonstrated a statistically significant positive relationship with injury risk.
 
-Key findings:
+### Results
 
 * Significant positive relationship
 * Adjusted R² = 0.1518
 * Positive regression coefficient
 * Hypothesis accepted
 
-Interpretation:
+### Interpretation
 
-Unsafe lifting practices increase the likelihood of workplace injuries.
+Unsafe lifting and lowering practices increase the likelihood of workplace injuries.
 
 ---
 
 ## Dock Safety
 
-Dock safety showed a positive but weaker relationship with injury risk.
+Dock safety demonstrated a weaker but positive relationship with injury risk.
 
-Key findings:
+### Results
 
 * Positive regression coefficient
 * Mixed statistical evidence
 * Hypothesis not fully supported
 
-Interpretation:
+### Interpretation
 
 Additional research may be necessary to better understand the impact of dock safety on workplace injuries.
 
@@ -135,7 +135,7 @@ Additional research may be necessary to better understand the impact of dock saf
 
 ![Management Support](charts/management_support.png)
 
-The positive trendline indicates that lower levels of management support are associated with higher workplace injury risk.
+The positive trendline suggests that lower levels of management support are associated with increased workplace injury risk.
 
 ---
 
@@ -143,7 +143,7 @@ The positive trendline indicates that lower levels of management support are ass
 
 ![Lifting and Lowering](charts/lifting_lowering.png)
 
-The visualization demonstrates a positive relationship between unsafe lifting practices and injury risk.
+The visualization demonstrates a positive relationship between unsafe lifting practices and workplace injury risk.
 
 ---
 
@@ -151,7 +151,7 @@ The visualization demonstrates a positive relationship between unsafe lifting pr
 
 ![Dock Safety](charts/dock_safety.png)
 
-The relationship between dock safety conditions and injury risk was positive but weaker than the relationships observed for management support and lifting practices.
+The relationship between dock safety conditions and workplace injury risk was positive but weaker than the relationships observed for management support and lifting practices.
 
 ---
 
@@ -159,70 +159,80 @@ The relationship between dock safety conditions and injury risk was positive but
 
 * R Programming
 * RStudio
-* Linear Regression
 * Statistical Analysis
+* Linear Regression
 * Data Visualization
-* Business Analytics
 * Hypothesis Testing
+* Business Analytics
+* Survey Research
 
 ---
 
 # Skills Demonstrated
 
+* Data Collection
+* Survey Design
 * Data Cleaning
 * Statistical Modeling
 * Regression Analysis
 * Data Visualization
-* Analytical Reporting
 * Business Analytics
-* Workplace Safety Analytics
 * Research Methodology
+* Analytical Reporting
 
 ---
 
-# Repository Contents
+# Project Structure
 
+```text
 warehouse-safety-analysis/
-
-README.md
-
-charts/
-dock_safety.png
-lifting_lowering.png
-management_support.png
-README.md
-
-data/
-Ban 701 Assignment Project Data.xlsx
-LiftingLoweringMean.xlsx
-docksafety.xlsx
-mgmtsupport.xlsx
-README.md
-
-docs/
-Ban 701 Project Questionnaire.docx
-Warehouse Safety Project.docx
-README.md
-
-scripts/
-H1.R
-H2.R
-H3.R
-README.md
+│
+├── README.md
+│
+├── charts/
+│   ├── dock_safety.png
+│   ├── lifting_lowering.png
+│   ├── management_support.png
+│   └── README.md
+│
+├── data/
+│   ├── Ban 701 Assignment Project Data.xlsx
+│   ├── LiftingLoweringMean.xlsx
+│   ├── docksafety.xlsx
+│   ├── mgmtsupport.xlsx
+│   └── README.md
+│
+├── docs/
+│   ├── Ban 701 Project Questionnaire.docx
+│   ├── Warehouse Safety Project.docx
+│   └── README.md
+│
+└── scripts/
+    ├── H1.R
+    ├── H2.R
+    ├── H3.R
+    └── README.md
+```
 
 ## Folder Descriptions
 
 ### charts/
-Contains regression visualizations and trendline analysis used to illustrate relationships between workplace safety factors and injury risk.
+
+Contains regression visualizations and trendline analyses used to illustrate relationships between workplace safety factors and injury risk.
 
 ### data/
-Contains the survey dataset and supporting Excel workbooks used for statistical analysis and hypothesis testing.
+
+Contains survey datasets and supporting Excel workbooks used for statistical analysis and hypothesis testing.
 
 ### docs/
-Contains the survey questionnaire and final project report documenting the research methodology, analysis, findings, and conclusions.
+
+Contains the survey questionnaire and project report documenting the research methodology, analysis, findings, and conclusions.
 
 ### scripts/
+
 Contains R scripts used to perform hypothesis testing, regression analysis, statistical calculations, and data visualization.
+
+---
 
 # Future Improvements
 
@@ -232,7 +242,7 @@ Potential future enhancements include:
 * Power BI reporting
 * Predictive injury risk modeling
 * Larger sample sizes
-* Additional warehouse safety variables
+* Additional workplace safety variables
 * Machine learning classification models
 
 ---
@@ -241,6 +251,9 @@ Potential future enhancements include:
 
 Nathan Corpus
 
+University of Nevada, Reno
+
 BAN 701 – Business Analysis Methods
 
-University of Nevada, Reno
+Business Analytics Portfolio Project
+
